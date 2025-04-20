@@ -2,7 +2,7 @@ const chatBody = document.querySelector(".chat-body");
 const messageInput = document.querySelector(".msg-input");
 const sendMessageButton = document.querySelector("#send-message");
 
-const API_KEY = "AIzaSyATRnRawnkM7whNPIX33QHed1RfhBlt9AQ";
+const API_KEY = "AIzaSyCl2PCxO07K7OaUHnmfFyNz4F-yksL2Sn8";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
 const conversation = [
