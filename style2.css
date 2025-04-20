@@ -1,0 +1,273 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+  }  
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+li {
+float: left;
+border-right:1px solid #bbb;
+}
+
+li:last-child {
+border-right: none;
+}
+
+li a {
+color: black;
+display: block;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+color: blueviolet;
+}
+
+.active {
+color: #6F68C2;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f0f7ff, #f5f0ff);
+  color: #334155;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styles */
+header {
+  padding: 32px 0 24px;
+  text-align: center;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.header-title h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.header-description {
+  max-width: 500px;
+  margin: 0 auto;
+  color: #64748b;
+}
+
+/* Main content styles */
+main {
+  padding: 32px 0;
+}
+
+section {
+  margin-bottom: 48px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title svg {
+  margin-right: 8px;
+}
+
+/* Card styles */
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(4px);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-description {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-footer {
+  padding: 12px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Motivation generator styles */
+.motivation-card {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quote-container {
+  background: linear-gradient(to right, #e9d5ff, #dbeafe);
+  padding: 24px;
+  border-radius: 8px;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.quote-author {
+  font-size: 0.875rem;
+  color: #64748b;
+  text-align: center;
+}
+
+.button {
+  background: linear-gradient(to right, #a855f7, #3b82f6);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: opacity 0.2s ease;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button svg {
+  margin-right: 8px;
+}
+
+/* Grid layouts */
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.games-grid {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.resources-grid {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 640px) {
+  .games-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .resources-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .games-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Link styles */
+.resource-link {
+  color: #0284c7;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.resource-link:hover {
+  color: #0369a1;
+}
+
+.game-link {
+  color: #10b981;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.game-link:hover {
+  color: #059669;
+}
+
+.link-icon {
+  margin-left: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+/* Footer styles */
+footer {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 32px 0;
+  margin-top: 48px;
+  text-align: center;
+}
+
+.footer-text {
+  color: #64748b;
+  margin-bottom: 8px;
+}
