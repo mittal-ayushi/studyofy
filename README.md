@@ -1,25 +1,5 @@
-# studyofy
-An AI-powered study assistant that helps students understand tough concepts and take care of their mental well-being—one hint, one step, one breath at a time.
+# Studyofy
+https://studyofy.netlify.app/
 
-🚀 What is Studyofy?
-Studyofy is an interactive web-based chatbot that helps students:
-
-Get step-by-step hints instead of full answers
-
-Review prior knowledge before solving new problems
-
-Get practice problems based on what they just learned
-
-Track stress levels through conversation
-
-Access a Comfort Zone with games, daily motivation, and mental health tools
-
-#Powered by Gemini API
-We used the Gemini API to build a responsive and intelligent chatbot that adapts to student needs—academically and emotionally.
-
-#Built With
-HTML
-CSS
-JavaScript
-Gemini API (for AI-powered responses and hint generation)
+Studyofy is a web-based AI chatbot designed to help students not just get answers, but actually learn. Built with HTML, CSS, JavaScript, and powered by the Gemini API, Studyofy gives step-by-step hints based on a student's prior knowledge, offers similar practice problems, and even checks in on stress levels to provide motivation or mental health support when needed. It features a “Comfort Zone” with games, daily affirmations, and wellness tools to help students recharge. The goal? To make studying feel less overwhelming and more human. Whether you're stuck on a tricky science problem or just need a quick mental break, Studyofy’s got your back.
 
